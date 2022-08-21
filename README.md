@@ -2007,7 +2007,7 @@ Open read-write, don't throw if new file:
 
 ```ts
 import { Database } from "bun:sqlite";
-const db = new Database("mydb.sqlite", { readonly: true, create: true });
+const db = new Database("mydb.sqlite", { readwrite: true, create: true });
 ```
 
 Open a database from a `Uint8Array`:
